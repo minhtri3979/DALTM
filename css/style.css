@@ -1,0 +1,446 @@
+/* Reset CSS */
+body {
+    background-color: #121212; /* Nền tối */
+    color: #f5f5f5; /* Màu chữ sáng */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header chính */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Giảm độ đổ bóng */
+    border-bottom: 2px solid #333;
+}
+
+/* Header trái: Tiêu đề */
+.header-left h1 {
+    font-size: 2rem;
+    color: #ffcc00; /* Màu vàng nổi bật */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Bóng chữ */
+    margin: 0;
+}
+
+/* Header phải: Nav */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Danh sách nav */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link trong nav */
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    transition: color 0.3s ease; /* Giảm hiệu ứng */
+}
+
+/* Hiệu ứng hover cho link */
+.nav-list li a:hover {
+    color: #ffcc00; /* Giữ màu vàng */
+}
+
+
+.profile-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Khoảng cách giữa ảnh và nội dung */
+    padding: 20px;
+    background: #1f1f1f; /* Nền tối hơn cho khối */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Đổ bóng tối hơn */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Ảnh đại diện ở div riêng */
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-image img {
+    width: 200px; /* Chiều rộng ảnh */
+    height: 200px; /* Chiều cao ảnh */
+    border-radius: 50%; /* Ảnh tròn */
+    border: 6px solid #f5a623; /* Viền vàng cam */
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Đổ bóng cho ảnh */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Nội dung profile-content */
+.profile-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Tiêu đề và đoạn văn bản của profile */
+.profile-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Màu vàng nổi bật */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Hiệu ứng bóng chữ */
+    border-bottom: 3px solid #ffcc00; /* Gạch chân màu vàng */
+    display: inline-block;
+}
+
+/* Đoạn văn bản giới thiệu */
+.profile-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Màu chữ sáng hơn */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Định dạng about-me */
+.about-me h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5);
+    border-bottom: 3px solid #ffcc00; /* Gạch chân màu vàng */
+    display: inline-block;
+}
+
+.about-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me ul li {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Màu chữ sáng */
+    margin-bottom: 10px;
+}
+
+/* Hiệu ứng hover cho link fb */
+.about-me ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.about-me ul li a:hover {
+    color: #f5a623;
+}
+/* Kỹ năng chuyên môn */
+.skills, .hobbies {
+    background-color: #1f1f1f; /* Nền tối hơn */
+    color: #f5f5f5; /* Màu chữ sáng */
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Đổ bóng */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tiêu đề của từng phần */
+.skills h3, .hobbies h3 {
+    font-size: 1.8rem;
+    color: #ffcc00; /* Màu vàng */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Bóng chữ */
+    border-bottom: 3px solid #ffcc00; /* Gạch chân */
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Danh sách kỹ năng */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Màu sáng hơn */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Icon cho từng mục trong danh sách */
+.skills ul li::before {
+    content: '✔'; /* Dấu check */
+    color: #ffcc00; /* Màu vàng */
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* Đoạn văn sở thích */
+.hobbies p {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Màu chữ sáng */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f; /* Nền tối */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ */
+    border-top: 2px solid #333; /* Viền trên */
+}
+
+/* Nội dung trong footer */
+footer p {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Màu chữ sáng */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Chọn font dễ đọc */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hiệu ứng hover cho chữ trong footer */
+footer p:hover {
+    color: #ffcc00; /* Màu vàng khi hover */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Bóng chữ khi hover */
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1.5rem;
+}
+
+.category {
+    padding: 1rem;
+    background: #333; /* Màu nền tối cho các category */
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background-color: #444; /* Màu nền tối hơn khi hover */
+}
+
+/* Hiệu ứng font cho category */
+.category h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffcc00; /* Màu vàng giống header */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Bóng chữ */
+}
+
+/* Posts */
+.posts {
+    max-width: 800px;
+    margin: 0 auto;
+    display: none;
+}
+
+.posts.active {
+    display: block;
+}
+
+.post {
+    background: #1f1f1f; /* Màu nền tối cho các bài viết */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease forwards;
+    display: flex;
+    gap: 1rem;
+}
+
+.post img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post-content {
+    flex: 1;
+}
+
+/* Hiệu ứng font cho tiêu đề post */
+.post-content h4 {
+    margin: 0;
+    color: #ffcc00; /* Màu vàng */
+    text-shadow: 0 2px 4px rgba(255, 204, 0, 0.5); /* Bóng chữ */
+}
+
+/* Nội dung văn bản trong bài viết */
+.post-content p {
+    margin: 0.5rem 0;
+}
+
+/* Link trong bài viết */
+.post-content a {
+    display: inline-block;
+    background: #ff5733; /* Màu nền cam đỏ đẹp mắt */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover */
+.post-content a:hover {
+    background: #c04a2f; /* Màu nền đỏ đậm khi hover */
+}
+
+
+/* Thêm các media query để làm responsive */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-content {
+        flex: none;
+        align-items: center;
+    }
+
+    .skills, .hobbies {
+        padding: 15px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .posts {
+        padding: 10px;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+    .profile-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me h3, .skills h3, .hobbies h3 {
+        font-size: 1.5rem;
+    }
+
+    .profile-content p, .skills ul li, .hobbies p {
+        font-size: 1rem;
+    }
+
+    .post-content h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
